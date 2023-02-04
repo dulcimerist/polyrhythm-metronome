@@ -4,5 +4,5 @@
 - Install [ChucK](https://chuck.cs.princeton.edu/)
 - `chuck metronome.ck`
 
-## To Set Rhythms:
-- Edit lines 1-4 to add/remove polyrhythms, set the tempo, set the beat frequency (I looked through ChucK's documentation and didn't see any way to pass arguments into the chuck command - I suppose I might be able to read from environment variables or a file, however)
+## To Adjust To Your Needs:
+- Mess with the Dials and Knobs section at the top of the metronome.ck file in order to alter the metronome. I poked through ChucK's docs, and didn't see any way to prompt users for this information or to pass values in as command-line arguments, or I'd have set it up so that users didn't need to alter the script itself to tune it
