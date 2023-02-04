@@ -5,8 +5,7 @@
 1.5 => float hzMultiplier; // Adjust pitch offset for polyrhythms
 // =====END OF DIALS AND KNOBS=====
 
-1::minute / baseBeatsPerMinute => dur baseBeat;
-beatsPerMeasure[0]::baseBeat => dur measure; // Use the first rhythm's time to determine how long all rhythms' measures should take
+(beatsPerMeasure[0] / baseBeatsPerMinute)::minute => dur measure; // Use the first rhythm's time to determine how long all rhythms' measures should take
 
 Metronome metronomes[beatsPerMeasure.cap()]; // Sure wish ChucK had object constructors so I could just define "[Metronome(beatsPerMeasure, toneHz),...]" instead of maintaining a separate array of beats per measure integers and metronome objects, then looping to assign one to the other
 
